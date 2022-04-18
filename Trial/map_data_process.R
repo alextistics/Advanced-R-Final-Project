@@ -40,6 +40,6 @@ us <- USAboundaries::us_states()
 write.csv(df_bach_adj,"bach_adj.csv")
 write.csv(df_hs_adj,"hs_adj.csv")
 
-us <- urbnmapr::get_urbn_map("states", sf = TRUE)
+#us <- urbnmapr::get_urbn_map("states", sf = TRUE)
 st_crs(us) = 2056
 st_write(us, "Trial/states_map.shp")

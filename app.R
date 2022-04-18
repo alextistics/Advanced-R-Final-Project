@@ -196,7 +196,7 @@ server <- function(input, output, session) {
     })
     output$StatePlot <- renderPlot({
       # Render a barplot
-      ggplot(plot_df(), aes(x=Race,y=attainment,fill=state)) +
+      ggplot(plot_df(), aes(x=factor(Race, levels=c("Total","Asian", "Black","Hispanic", "Two or More Races","White")),y=attainment,fill=state)) +
         geom_col(width = 0.8, position = position_dodge(0.9), aes(color = state)) + 
         labs(title = str_wrap(paste(measure(),"by Race in",stateSelection()), 30)) +
         scale_fill_discrete(name = "Region", 
