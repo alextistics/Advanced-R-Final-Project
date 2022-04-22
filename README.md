@@ -13,4 +13,4 @@
   - Percentages for total and each demographic subgroup
   - Error bars
   - Demographic Information for State from Census
-- [Final App](https://violetdeviations.shinyapps.io/Advance d-R-Final-Project001/)
+- [Final App] (https://violetdeviations.shinyapps.io/Advanced-R-Final-Project001/)
